@@ -1,24 +1,16 @@
-# [Título del trabajo/tarea/(módulo del proyecto)] 
+# [Practica de documentación en Markdown] 
 
 
 | Código | Description |
 | ------:| ----------- |
 | ***Asignatura*** | Código del Trabajo o Número de Tarea | 
-| **TSR-2022-I** | Tarea *01 ... n* |
-| **Robotica-2022-I**  | Tarea *01 ... n* |
-| **IT102321-C002** | Sistema Ciber-Físico - Proyecto - Módulo |
+| **TSR-2022-I** | Tarea *01 n* |
 
 ## Contenido
-
-- [Objetivo](#objetivo)
 - [Introducción](#introduccion)
 - [Desarrollo](#desarrollo)
 - [Autor](#autor)
 - [Referencias](#referencias)
-
-## Objetivo
-
-Redacción del objetivo del trabajo o texto que describe a la tarea (_según sea el caso_).
 
 ## Introducción
 
