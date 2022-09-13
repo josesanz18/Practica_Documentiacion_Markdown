@@ -14,20 +14,43 @@
 
 ## Introducción
 
-Párrafo de introducción del trabajo o tarea (_si aplica_). 
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Esta tarea práctica es realizada con el objetivo de familiarizarnos con Markdown y podamos realizar documentación apropiada, usando encabezados, tablas, imágenes y demás recursos según sea necesario.
+Para practicar la documentación se elaboró un documento introductorio a ROS.
 
 
 ## Desarrollo
 
-Para consultar el formato a este documento, visitar [Markdown 101](https://github.com/decidim-archive/docs-template/blob/master/es/markdown-101.md).
-ver en [texto plano](https://raw.githubusercontent.com/decidim-archive/docs-template/master/es/markdown-101.md)
+### Clasificación de los robots móviles por configuración
+En los robots móviles con ruedas se consideran las siguientes configuraciones: ackerman, triciclo clásico, tracción diferencial, skid steer, síncrona y tracción omnidireccional, las cuales dotan al robot de características y propiedades distintas respecto a la eficiencia energética, dimensiones, cargas y maniobrabilidad[^1].
+
+### Restricciones cinemáticas
+Coordenadas dependientes: Coordenadas adicionales que se utilizan para definir el sistema de manera unívoca.
+Están relacionadas con las coordenadas independientes mediante las ecuaciones de **restricción cinemáticas**.
+Estas restricciones son por lo general no lineales y su número es igual al número de coordenadas dependientes[^2].
+
+### Conceptos de localización, ruta, odometría y planeación de ruta.
+
+#### ·Localización
+La localización de robots móviles autónomos consiste en determinar la posición del robot en relación a un mapa dado del entorno. El problema de la localización de un robot móvil reside en que su posición no puede ser medida directamente y debe ser inferida de datos sensoriales[^3].
+
+#### ·Ruta
+La palabra ruta proviene del francés route, que a su vez deriva del latín rupta. Se trata de un camino, carretera o vía que permite transitar desde un lugar hacia otro. En el mismo sentido, una ruta es la dirección que se toma para un propósito[^4].
+
+#### ·Odometría
+Es el estudio de la estimación de la posición de vehículos con ruedas durante la navegación.
+Para realizar esta estimación se usa información sobre la rotación de las ruedas para estimar cambios en la posición a lo largo del tiempo.
+Este término también se usa a veces para referirse a la distancia que ha recorrido uno de estos vehículos[^5].
+
+#### ·Planeación de ruta
+La planificación de trayectorias, por su parte, es la encargada de encontrar una ruta transitable entre una posición de origen y una posición objetivo. La planificación exige, entre otras cosas, una representación del robot y su entorno. La representación explícita de entornos amplios hace que el coste computacional y de memoria de la planificación sea alto, hasta el punto de llegar a ser intratable en un espacio de tiempo razonable. Debido a ello, se han desarrollado metodologías y algoritmos que buscan una solución de compromiso entre la optimidad de la solución y el coste computacional[^3].
+
+### Diferencias entre sistemas holonómicos y no-honolomicos.
+Una de las posibles formas de clasificar los robots es distinguiendo si son holonómicos o no. Es una distinción que está relacionada con su movilidad. Simplificando, podemos decir que robots o sistemas holonómicos son aquellos capaces de modificar su dirección instantáneamente (en esta consideración se considera masa nula), y sin necesidad de rotar previamente. Un vehículo con un sistema de dirección como el de un coche, por ejemplo, no lo es, porque para poder desplazarse en el sentido lateral tiene que realizar varias maniobras previas. Del mismo modo, un robot con 2 ruedas es no-holonómico ya que no puede moverse hacia la izquierda o la derecha. Siempre lo hace hacia delante en la dirección definida por la velocidad de sus ruedas[^6].
+
+### Caracterización de la plataforma móvil TurtleBot3:
+#### Modelo cinemático
+#### Sensores y actuadores que lo integran.
+#### Nodos y Tópicos de ROS utilizados por la plataforma Turtlebot3 y sus sensores
 
 Ejemplo de párrafo
 
@@ -254,7 +277,7 @@ Una nota al pie también puede tener múltiples líneas multiple lines[^2].
 
 También puede usar palabras, para adaptarse mejor a su estilo de escritura.[^nota].
 
-[^1]: I.A. Glover and P.M. Grant, Digital Communications, 3rd ed. Harlow: Prentice Hall, 2009.
+[^1]: A.e: Gil. (2022, Julio 06). Robótica móvil: Qué es y sus aplicaciones.[Online]. Available: https://openwebinars.net/blog/robotica-movil-que-es-y-sus-aplicaciones/#:~:text=En%20los%20robots%20m%C3%B3viles%20con,eficiencia%20energ%C3%A9tica%2C%20dimensiones%2C%20cargas%20y
 [^2]: . B. Kuipers, [Quaternions and rotation sequences](https://amzn.to/2RY2lwI). 
   Princeton, NJ: Princeton University Press, 2002. (Chapter 5,  Section 5.14 “Quaternions to Matrices”, pg. 125)
 
@@ -282,11 +305,14 @@ Para conocer más acerca del formato de **Markdown** con la personalización de 
 	>
     > Lugar de publicación: Publicador, Año.
 
-[^1]: I.A. Glover and P.M. Grant, Digital Communications, 3rd ed. Harlow: Prentice Hall, 2009. 
+[^1]: A.e: Gil. (2022, Julio 06). Robótica móvil: Qué es y sus aplicaciones.[Online]. Available: https://openwebinars.net/blog/robotica-movil-que-es-y-sus-aplicaciones/#:~:text=En%20los%20robots%20m%C3%B3viles%20con,eficiencia%20energ%C3%A9tica%2C%20dimensiones%2C%20cargas%20y 
 
-[^2]: J. B. Kuipers, [Quaternions and rotation sequences](https://amzn.to/2RY2lwI). 
-  Princeton, NJ: Princeton University Press, 2002. (Chapter 5,  Section 5.14 “Quaternions to Matrices”, pg. 125)
+[^2]: A. Fernández. (N.A.). Maquinas y Mecanismos.[Online]. Available: https://ocw.unican.es/pluginfile.php/2949/course/section/2799/Tema%207%20-%20Ana%CC%81lisis%20Cinema%CC%81tico%20III.pdf
 
-[^3]: H.-L. Pham, V. Perdereau, B. Adorno, en P. Fraisse, 
-  “Position and Orientation Control of Robot Manipulators Using Dual Quaternion Feedback”, 11 2010, bll 658–663. 
-  <https://www.researchgate.net/publication/224200087_Position_and_Orientation_Control_of_Robot_Manipulators_Using_Dual_Quaternion_Feedback>
+[^3]: Tekniker. (N.A.). LOCALIZACIÓN Y PLANIFICACIÓN DE TRAYECTORIAS.[Online]. Available: https://www.tekniker.es/es/localizacion-y-planificacion-de-trayectorias#:~:text=La%20localizaci%C3%B3n%20de%20robots%20m%C3%B3viles,ser%20inferida%20de%20datos%20sensoriales.
+
+[^4]: J. Delgado. (2013, Enero 13). Significado de Ruta (Definición, Concepto, Qué es).[Online]. Available: https://edukavital.blogspot.com/2013/01/definicion-de-ruta-compendio-de.html
+
+[^5]: K. Ramírez. (N.A.). Odometría. [Odometría]. Available: http://www.kramirez.net/Robotica/Material/Presentaciones/Odometria.pdf
+
+[^6]: electric Bricks. (2010, Septiembre 16). Sistemas holonómicos.[Online]. Available: http://blog.electricbricks.com/2010/07/sistemas-holonomicos/
