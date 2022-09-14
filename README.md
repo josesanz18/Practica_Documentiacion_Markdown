@@ -50,7 +50,58 @@ Una de las posibles formas de clasificar los robots es distinguiendo si son holo
 ### Caracterización de la plataforma móvil TurtleBot3:
 #### Modelo cinemático
 #### Sensores y actuadores que lo integran.
+
+![tb3](/imagenes/turtlebot3_burger_components.png)[^7]
 #### Nodos y Tópicos de ROS utilizados por la plataforma Turtlebot3 y sus sensores
+
+El nodo **/amcl** permite leer la posición inicial del robot, las coordenadas y el continuo escaneo
+en la variación de su posición para ser publicada en el tópico **/particlecloud** el cual permite analizar
+la variación de sus coordenadas desde la posición (0, 0, 0) y comunicarse con el computador
+remotamente.
+
+El nodo **/move_base** es necesario para el funcionamiento del robot, 
+se encarga de mover el robot hacia una meta o punto final. En este nodo se asocian “topicos” o
+tares que permite realizar el funcionamiento total del robot.
+
+Este nodo recibe los datos tomados del sensor LDS unido con los datos de posicionamiento
+del robot para construir la trayectoria y variar la velocidad lineal o angular del robot “turltebot 3”
+mediante el uso del topic **/cmd_vel.**
+
+El nodo **/turtlebot3_slam_gmapping** permite hacer el mapeo del robot alrededor de su
+trayectoria. Este nodo recibe los valores de posicionamiento del robot permitiendo tener una
+referencia del robot dentro del mapa.
+
+El nodo **/explore_server** es el encargado de recibir el valor del punto final de la trayectoria y
+convertir este valor es un valor binario. Este valor binario va ser recibido por el nodo **/move_base** 
+para realizar la trayectoria desde el punto posicionado del robot hasta el punto final definido por el
+usuario.
+
+El nodo **turtlebot3_core** es el encargado de recibir los valores del tópico **/cmd_vel** y guiar el
+robot a través de la trayectoria creada por el nodo move_base controlando el valor de posición,
+orientación y covarianza del robot. 
+
+Algunos Tópicos empleados son:
+/tf
+/initialpose
+/tf_static
+/scan
+/explore_server/action_topics
+/move_base/action_topics
+/particlecloud
+/odom
+/map
+/move_base_simple/goal
+/move_base/NavfnROS/plan
+/move_base/local_constmap/constmap_updates
+/move_base/DWAPlannerROS/global_plan
+/move_base/local_constmap/constmap
+/move_base/global_constmap/constmap
+/move_base/local_constmap/footprint
+/move_base/action_topics
+/join_states
+/tf
+/sensor_state
+/imu[^8]
 
 Ejemplo de párrafo
 
@@ -316,3 +367,5 @@ Para conocer más acerca del formato de **Markdown** con la personalización de 
 [^5]: K. Ramírez. (N.A.). Odometría. [Odometría]. Available: http://www.kramirez.net/Robotica/Material/Presentaciones/Odometria.pdf
 
 [^6]: electric Bricks. (2010, Septiembre 16). Sistemas holonómicos.[Online]. Available: http://blog.electricbricks.com/2010/07/sistemas-holonomicos/
+[^7]: Robotis. (N.A.). TurtleBot3 2.Feature. [Online]. Available:https://emanual.robotis.com/docs/en/platform/turtlebot3/features/#specifications
+[^8]: D.L. Martínez. (2019) Trabajo de grado para optar al título de Ingeniero Electrónico. [Online]. Available: https://repository.usta.edu.co/bitstream/handle/11634/18667/2019davidmartinez.pdf?sequence=1
