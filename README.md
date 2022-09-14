@@ -1,10 +1,4 @@
-# [Practica de documentación en Markdown] 
-
-
-| Código | Description |
-| ------:| ----------- |
-| ***Asignatura*** | Código del Trabajo o Número de Tarea | 
-| **TSR-2022-I** | Tarea *01 n* |
+# TSR-2023-I-Tarea-01-Pr-ctica-Documentacion-Markdown
 
 ## Contenido
 - [Introducción](#introduccion)
@@ -298,63 +292,13 @@ Ejemplo de inserción de **expresiones matemáticas** dentro del **texto de una 
 
 Conclusiones o cierre al trabajo realizado.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-no sea takimata sanctus est Lorem ipsum dolor sit amet[^3]. ← ***nota al pie insertada en el párrafo***. 
+. 
 
 ## Autor
 
-***[Nombre del autor o listado de los integrantes del equipo]***
-
-**Autor** Felipe Rivas Campos [GitHub profile](https://github.com/rivascf)
-
-o en caso de tratarse de un equipo
-
-| Iniciales  | Description |
-| ----------:| ----------- |
-| **RICF** | Felipe Rivas Campos [GitHub profile](https://github.com/rivascf) |
-| **EPM**  | Erik Peña Medina [GitHub profile](https://github.com/ErikFiUNAM) |
-| **MGR-MX** | Mechatronics Research Group, México [GitHub profile](https://github.com/mrg-mx) |
+**Autor**José Manuel Sánchez Espinosa [GitHub profile](https://github.com/josesanz18)
 
 ## Referencias
-
-Se pueden agregar notas al pie (cómo pudiste notar en las líneas marcadas como *"nota al pie insertada"*) en este documento, utilizando la siguiente sintaxis de corchetes:
-
-```text
-Esta es una nota al pie sencilla[^1].
-
-Una nota al pie también puede tener múltiples líneas multiple lines[^2].  
-
-También puede usar palabras, para adaptarse mejor a su estilo de escritura.[^nota].
-
-[^1]: A.e: Gil. (2022, Julio 06). Robótica móvil: Qué es y sus aplicaciones.[Online]. Available: https://openwebinars.net/blog/robotica-movil-que-es-y-sus-aplicaciones/#:~:text=En%20los%20robots%20m%C3%B3viles%20con,eficiencia%20energ%C3%A9tica%2C%20dimensiones%2C%20cargas%20y
-[^2]: . B. Kuipers, [Quaternions and rotation sequences](https://amzn.to/2RY2lwI). 
-  Princeton, NJ: Princeton University Press, 2002. (Chapter 5,  Section 5.14 “Quaternions to Matrices”, pg. 125)
-
-Tome en cuenta que cada línea nueva debe ir precedida de 2 espacios, permitiendo tener una nota al pie con varias líneas.
-
-[^nota]:
-	Las notas al pie de página identificadas con nombre aún se representarán con números en lugar del texto pero, permitirán una identificación y vinculación más sencillas.
-	Esta nota al pie también se ha realizado con una sintaxis diferente, usando 4 espacios en lugar de 2 para cada línea nueva.
-```
-
-**Notas**
-
-Para el desarrollo de documentos dentro del grupo y la asignatura, se usa el formato **IEEE**.[^nota] ← ***insertada al pie del documento con el no. 4***
-
-**Nota simple** insertada en la posición del texto dónde se introdujo.
-
-> **_Nota:_** La posición de una nota al pie en el archivo de markdown no influencia el cómo se interpretará la nota al pie. 
-> Se puede escribir una nota al pie inmediatamente después de insertar la referenciarla y aún así **se mostrará en la parte inferior del archivo**.
-
-Para conocer más acerca del formato de **Markdown** con la personalización de GitHub se pude consultar la [documentación de GitHub](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github).
-
-[^nota]:
-    Listado de referencias documentales consultadas para realizar el trabajo, consultar el siguiente [vínculo](https://www.bath.ac.uk/publications/library-guides-to-citing-referencing/attachments/ieee-style-guide.pdf) para el formato de referencia estilo **IEEE**.
-    > `[^Num Ref]` Iniciales del autor. Apellido del autor, Título del libro, edicion (si no es la primera).
-	>
-    > Lugar de publicación: Publicador, Año.
 
 [^1]: A.e: Gil. (2022, Julio 06). Robótica móvil: Qué es y sus aplicaciones.[Online]. Available: https://openwebinars.net/blog/robotica-movil-que-es-y-sus-aplicaciones/#:~:text=En%20los%20robots%20m%C3%B3viles%20con,eficiencia%20energ%C3%A9tica%2C%20dimensiones%2C%20cargas%20y 
 
@@ -367,5 +311,7 @@ Para conocer más acerca del formato de **Markdown** con la personalización de 
 [^5]: K. Ramírez. (N.A.). Odometría. [Odometría]. Available: http://www.kramirez.net/Robotica/Material/Presentaciones/Odometria.pdf
 
 [^6]: electric Bricks. (2010, Septiembre 16). Sistemas holonómicos.[Online]. Available: http://blog.electricbricks.com/2010/07/sistemas-holonomicos/
+
 [^7]: Robotis. (N.A.). TurtleBot3 2.Feature. [Online]. Available:https://emanual.robotis.com/docs/en/platform/turtlebot3/features/#specifications
+
 [^8]: D.L. Martínez. (2019) Trabajo de grado para optar al título de Ingeniero Electrónico. [Online]. Available: https://repository.usta.edu.co/bitstream/handle/11634/18667/2019davidmartinez.pdf?sequence=1
