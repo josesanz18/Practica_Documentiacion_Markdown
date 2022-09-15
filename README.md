@@ -1,8 +1,9 @@
-# TSR-2023-I-Tarea-01-Pr-ctica-Documentacion-Markdown
+# TSR-2023-I-Tarea-01-Practica-Documentacion-Markdown
 
 ## Contenido
-- [Introducción](#introduccion)
+- [Introducción](#introducción)
 - [Desarrollo](#desarrollo)
+- [Conclusiones](#conclusiones)
 - [Autor](#autor)
 - [Referencias](#referencias)
 
@@ -10,7 +11,6 @@
 
 Esta tarea práctica es realizada con el objetivo de familiarizarnos con Markdown y podamos realizar documentación apropiada, usando encabezados, tablas, imágenes y demás recursos según sea necesario.
 Para practicar la documentación se elaboró un documento introductorio a ROS.
-
 
 ## Desarrollo
 
@@ -43,6 +43,8 @@ Una de las posibles formas de clasificar los robots es distinguiendo si son holo
 
 ### Caracterización de la plataforma móvil TurtleBot3:
 #### Modelo cinemático
+
+![tb3_D](/imagenes/turtlebot3_dimension1.png)
 #### Sensores y actuadores que lo integran.
 
 ![tb3](/imagenes/turtlebot3_burger_components.png)[^7]
@@ -97,206 +99,15 @@ Algunos Tópicos empleados son:
 /sensor_state
 /imu[^8]
 
-Ejemplo de párrafo
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-Bloques de cita
-
-> "If it weren't for my lawyer, I'd still be in prison.
->  It went a lot faster with two people digging."
->
-> --- Joe Martin
-
-Bloque de cita con vínculo de referencia. 
-
-> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-> tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
->
-> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-> no sea takimata sanctus est Lorem ipsum dolor sit amet[^1]. ← ***nota al pie insertada*** 
-
-vinculo a otro [documento](/docs/document-template.md) en el repositorio (_ruta relativa_).
-
-Imágenes
-
-![Markdown Guide](/images/markdown-logo.png) Markdown Guide [Basic Syntax](https://www.markdownguide.org/basic-syntax/), [Extended Syntax](https://www.markdownguide.org/extended-syntax/)
-
-Ejemplo de la estructura del directorios del repositorio: 
-
-Proyecto de **ROS** con los directorios **adicionales** para almacenar **imágenes** y **documentos** referentes al **proyecto**.
-
-**Nota:** La estructura mostrada representa -en su mayoría- a los directorios más usados dentro de un proyecto de **ROS**.
-
-```text
- proyecto/
-    ├── images/
-    │   ├── imagen1.png
-    │   ├── imagen2.png
-    │   ├── imagen3.gif
-    │   └── imagen5.svg
-    ├── docs/
-    │   ├── archivo1.md
-    │   ├── archivo2.pdf
-    │   ├── archivo3.txt
-    │   └── archivo2.pdf
-    ├── src/
-    │   ├── include/
-    │   │   ├── lib1.h
-    │   │   └── libcpp.so
-    │   ├── config/
-    │   │   ├── config-file01.yaml
-    │   │   └── config-file02.yaml
-    │   ├── meshes/
-    │   │   ├── visual/
-    │   │   │   ├── mesh-file.stl
-    │   │   │   └── mesh-file.dae
-    │   │   └── collision/
-    │   │       ├── mesh-file.stl
-    │   │       └── mesh-file.dae
-    │   ├── launch/
-    │   │   ├── launch-file1.launch
-    │   │   ├── rviz-file1.rviz
-    │   │   ├── rviz-file2.rviz
-    │   │   └── launch-file3.launch
-    │   ├── msg/
-    │   │   ├── Message-file1.msg
-    │   │   └── Message-file2.msg
-    │   ├── srv/
-    │   │   ├── ServiceMsg-file1.srv
-    │   │   └── ServiceMsg-file2.srv
-    │   ├── action/
-    │   │   ├── ActionMsg-file1.action
-    │   │   └── ActionMsg-file2.action
-    │   ├── urdf/
-    │   │   ├── urdf-file.urdf
-    │   │   └── xacro-file.xacro
-    │   ├── scripts/
-    │   │   ├── pyscript-file.py
-    │   │   └── cpp-programm.cpp
-    │   ├── src/
-    │   │   ├── cpp-programm.cpp
-    │   │   └── pyprogramm-file.py
-    │   ├── Otros-archivos-del-proyecto.txt
-    │   ├── package.xml
-    │   └── CMakeLists.txt
-    ├── .gitignore
-    ├── CMakeLists.txt
-    ├── LICENSE.md
-    ├── Otros-archivos-generales.txt
-    └── README.md
-```
-
-***Bloques de código***
-
-Bloques de código "cercados"
-
-```
-Texto de ejemplo aquí...
-```
-
-De acuerdo a la sintaxis del lenguaje de programación, ver más [información](https://docs.github.com/es/github/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks).
-
-``` js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
-```
-
-**Expresiones Matemáticas**
-
-Para permitir una comunicación clara de expresiones matemáticas, GitHub admite expresiones matemáticas con formato LaTeX dentro de Markdown. Para obtener más información, consulte [LaTeX/Mathematics](http://en.wikibooks.org/wiki/LaTeX/Mathematics) en Wikibooks.
-
-La capacidad de representación matemática de GitHub usa MathJax; un motor de visualización de código abierto basado en JavaScript. MathJax admite una amplia gama de macros LaTeX y varias extensiones de accesibilidad útiles. Para obtener más información, consulte [la documentación de MathJax](http://docs.mathjax.org/en/latest/input/tex/index.html#tex-and-latex-support) y la [documentación de extensiones de accesibilidad de MathJax](https://mathjax.github.io/MathJax-a11y/docs/#reader-guide).
-
-La representación de expresiones matemáticas está disponible en Propuestas de GitHub, discusiones de GitHub, solicitudes de incorporación de cambios, wikis y archivos Markdown.
-
-
-**Escribir expresiones en línea**
----
-
-Para incluir una expresión matemática en línea con su texto, delimite la expresión con un símbolo de dólar $.
-
-El siguiente ejemplo muestra como se visualiza la expresión `$\sqrt{3x-1}+(1+x)^2$` dentro de una cita:
-
-> Esta oración usa delimitadores `$` para mostrar matemáticas en línea: $\sqrt{3x-1}+(1+x)^2$
-
-
-**Escribir expresiones como bloque**
----
-
-Para agregar una expresión matemática como un bloque, comience una nueva línea y delimite la expresión con dos símbolos de dólar $$.
-
-```latex
-$$ P(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{\frac{-(x-\mu)^2}{2\sigma^2}} $$
-```
-
-Se visualiza como:
-
-$$ P(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{\frac{-(x-\mu)^2}{2\sigma^2}} $$
-
-
-Otros ejemplos:
-
-```latex
-$$
-\mathbb{R} \ =\ \begin{bmatrix}
-n & o & a
-\end{bmatrix} \ =\ \begin{bmatrix}
-n_{x} & o_{x} & a_{x}\\
-n_{y} & o_{y} & a_{y}\\
-n_{z} & o_{z} & a_{z}
-\end{bmatrix}
-$$
-```
-
-se visualiza como:
-
-$$
-\mathbb{R} \ =\ \begin{bmatrix}
-n & o & a
-\end{bmatrix} \ =\ \begin{bmatrix}
-n_{x} & o_{x} & a_{x}\\
-n_{y} & o_{y} & a_{y}\\
-n_{z} & o_{z} & a_{z}
-\end{bmatrix}
-$$
-
-Ejemplo de inserción de **expresiones matemáticas** dentro del **texto de una cita** con **nota al pie**:
-
-**Convertir un cuaternión en una matriz de rotación**
-
-> Dado un cuaternión $q=(q_{0}, q_{1} i, q_{2} j, q_{3} k)$, puede encontrar la matriz de rotación tridimensional correspondiente utilizando la siguiente fórmula[^2]. ← ***nota al pie insertada***
->
-> $$
-> \begin{equation}
-> \mathbb{R}( Q) =\begin{bmatrix}
-> 2\left( q_{0}^{2} +q_{1}^{2}\right) -1 & 2( q_{1} q_{2} -q_{0} q_{3}) & 2( q_{1} q_{3} +q_{0} q_{2})\\
-> 2( q_{1} q_{2} +q_{0} q_{3}) & 2\left( q_{0}^{2} +q_{2}^{2}\right) -1 & 2( q_{2} q_{3} -q_{0} q_{1})\\
-> 2( q_{1} q_{3} -q_{0} q_{2}) & 2( q_{2} q_{3} +q_{0} q_{1}) & 2\left( q_{0}^{2} +q_{3}^{2}\right) -1
-> \end{bmatrix}
-> \end{equation}
-> $$
->
-
-**Youtube videos**
-
-[![Markdown, Curso Práctico para principiantes y desarrolladores](https://img.youtube.com/vi/oxaH9CFpeEE/0.jpg)](https://www.youtube.com/watch?v=oxaH9CFpeEE)
-
 ## Conclusiones
 
-Conclusiones o cierre al trabajo realizado.
-
-. 
+Se lograron identificar las diferentes configuraciones de los robpots móviles, como el triciclo y el ackerman. A su vez, se definieron las ecuaciones de restricción en la robótica. 
+También se recavó infirmación reelevante para los robots móviles, como la localización, la ruta, la odometría y la planeación de ruta, como también la diferencia entre sistemas holonómicos y no holonómicos.
+Por último, se recaudó información relevante relacionada a la plataforma de desarrollo, TurtleBot3, identificando su configuración, los nodos y tópicos más importantes que emplea, sin olvidar los sensores y actuadores que lo conforman.
 
 ## Autor
 
-**Autor**José Manuel Sánchez Espinosa [GitHub profile](https://github.com/josesanz18)
+**Autor** José Manuel Sánchez Espinosa [GitHub profile](https://github.com/josesanz18)
 
 ## Referencias
 
